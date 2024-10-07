@@ -82,7 +82,7 @@ const Transactions = ({ month, monthText }) => {
     const getData = async (page) => {
         try {
             setLoading(true);
-            const { data: responseData } = await axios.get(`https://pratham-backend.onrender.com/transactions`, {
+            const { data: responseData } = await axios.get(`https://pratham-back.onrender.com/transactions`, {
                 params: {
                     month,
                     page, // Current page number
