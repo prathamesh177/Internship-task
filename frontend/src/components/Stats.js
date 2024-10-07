@@ -14,7 +14,7 @@ export default function Stats({ month, monthText }) {
     const getData = async () => {
         try {
             setLoading(true);
-            const res = await axios.get(`http://localhost:5000/combined-data?month=${month}`);
+            const res = await axios.get(`https://pratham-backend.onrender.com/combined-data?month=${month}`);
             setLoading(false);
             setData(res.data);
             message.success('Data loaded successfully');
